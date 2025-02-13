@@ -25,7 +25,10 @@ function createGrid() {
         item.style.width = `${pixelSize}px`
         item.style.height = `${pixelSize}px`
         item.addEventListener("mouseover", () => {
-            item.style.backgroundColor = "purple"
+            let red = Math.floor(Math.random() * 255)
+            let green = Math.floor(Math.random() * 255)
+            let blue = Math.floor(Math.random() * 255)
+            item.style.backgroundColor = `rgb(${red},${green},${blue})`
         })
     })
 }
